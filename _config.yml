@@ -18,15 +18,15 @@ avatar: https://raw.githubusercontent.com/yuzhouwww/yuzhouwww.github.io/master/i
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble: 
-  email: 
-  facebook: 
+  email: yuzhouwww@163.com
+  facebook: 于宙
   flickr: 
-  github: barryclark/jekyll-now
+  github: yuzhouwww
   instagram: 
   linkedin: 
   pinterest: 
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: jekyllrb
+  twitter: yuzhouwww
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
 # Your disqus shortname, entering this will enable commenting on posts
