@@ -1,0 +1,64 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="GitHub2.css">
+<script src="asset/mwebjs/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="asset/highlightjs/styles/github.css">
+<script src="asset/highlightjs/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script>
+<script src="asset/flow-sequence-chart/raphael-min.js"></script><script src="asset/flow-sequence-chart/underscore-min.js"></script><script src="asset/flow-sequence-chart/flowchart.min.js"></script><script src="asset/flow-sequence-chart/sequence-diagram-min.js"></script><script type="text/javascript">$(function(){    var mwebii=0;    var mwebChartEleId = 'mweb-chart-ele-';    $('pre>code').each(function(){        mwebii++;        var eleiid = mwebChartEleId+mwebii;        if($(this).hasClass('language-sequence')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"><div>').insertAfter(ele);            ele.hide();            var diagram = Diagram.parse($(this).text());            diagram.drawSVG(eleiid,{theme: 'simple'});        }else if($(this).hasClass('language-flow')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"><div>').insertAfter(ele);            ele.hide();            var diagram = flowchart.parse($(this).text());            diagram.drawSVG(eleiid);        }    });});</script>
+<script type="text/x-mathjax-config">if (typeof MathJaxListener !== 'undefined') { MathJax.Hub.Register.StartupHook('End', function () { MathJaxListener.invokeCallbackForKey_('End'); }); } </script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<style> @media print{ {.hljs{overflow: visible; word-wrap: break-word;} }</style></head><body>
+<h1 id="toc_0">MWeb - Pro Markdown writing, note taking and static blog generator App</h1>
+
+<h2 id="toc_1">Pro Markdown writing</h2>
+
+<ul>
+<li>Mini UI,beautiful Markdown syntax highlight,optimized lists indent, seven editor themes. Support official Markdown syntax and massive Markdown extensions:
+
+<ul>
+<li class="task-list-item"><input type="checkbox" checked> Support Table
+</li>
+<li class="task-list-item"><input type="checkbox" checked> Support TOC（Table Of Content）
+</li>
+<li class="task-list-item"><input type="checkbox" checked> Support MathJax
+</li>
+<li class="task-list-item"><input type="checkbox" checked> Support Fenced code block
+</li>
+<li class="task-list-item"><input type="checkbox" checked> Support Task lists, <code>- + space + [ ]</code>or <code>- + space + [x]</code>
+</li>
+<li class="task-list-item"><input type="checkbox" checked> Support Sequence &amp; Flow chart
+</li>
+<li class="task-list-item"><input type="checkbox" checked> Support Strikethrough、Underline、Superscript、Autolinks、Footnote and more.
+</li>
+</ul></li>
+<li>Support six live preview themes. Easy to custom preview theme. All themes can export to HTML or PDF. To open live preview window, please press <code>CMD + R</code>. </li>
+<li>Support Outline view.</li>
+</ul>
+
+<h2 id="toc_2">Design with two patterns</h2>
+
+<ul>
+<li>External Document pattern: This pattern design for create, open external Markdown document, it just like <code>TextEdit</code>.</li>
+<li>Documents Library pattern: This pattern design for note taking and static blog generator. You can organize documents with categories,drag &amp; drop or paste photos to the editor and display. <code>CMD + V</code> paste to JPG pictrue, <code>CMD + Shift + V</code> paste to PNG pictrue.</li>
+</ul>
+
+<p><code>CMD + N</code> and <code>CMD + O</code> to create,open external Markdown document.<br>
+<code>CMD + Shift + N</code> to create MWeb Library document. <code>CMD + L</code> to open MWeb Documents Library.</p>
+
+<h2 id="toc_3">Documents Library pattern for note taking</h2>
+
+<p>Documents Library pattern use categories tree to organize documents, support drag &amp; drop or paste insert pictrue and display immediately. Support import external Markdown or txt document to the library, export a category or documents to HTML, PDF or Markdown.</p>
+
+<p>More info, please check this post: <a href="http://www.mweb.im/mweb-document-library.html">Introduction MWeb Documents Library</a></p>
+
+<h2 id="toc_4">Documents Library pattern for static blog generator</h2>
+
+<p>You can build static blog <strong>One Click</strong>! Now has two blog themes, it&#39;s easy to custom you owner blog theme. you can add <a href="http://www.addthis.com/">AddThis</a> and <a href="http://www.disqus.com">Disqus</a> code for share and comment support to you blog. You can enable MathJax and Sequence &amp; Flow chart support in category setting.</p>
+
+<p>More info, please check this post: <a href="http://www.mweb.im/mweb-static-blog-generator.html">Introduction MWeb Static Blog Generator</a></p>
+
+</body>
+
+</html>
