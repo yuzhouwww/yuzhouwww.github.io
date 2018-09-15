@@ -1,0 +1,521 @@
+body {
+    background-color: black;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, arial, sans-serif;
+    font-weight: normal;
+    width: 1920;
+    height: 1080;
+}
+
+@font-face {
+    font-family: Prism;
+    src: url('images/PrismMedium.otf');
+}
+
+.clear {
+    clear: both;
+}
+
+#daily_transactions {
+    color: #FFDD0D;
+    font-size: 24;
+    font-weight: bold;
+    margin: 40 0 0 30;
+}
+
+#daily_transaction_block {
+    margin-top: -20;
+    margin-left: 30;
+    color: #FFDD0D;
+    font-family: Prism, Helvetica;
+    font-size: 100pt;
+    letter-spacing: 3pt;
+}
+
+#transactions_block {
+    margin-top: 10;
+    margin-left: 30;
+}
+
+.period_item {
+    display: inline-block;
+    margin-right: 70;
+}
+
+.period_title {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18;
+}
+
+.period_count {
+    margin-top: 4;
+    color: white;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+    font-size: 22;
+    font-weight: bold;
+}
+
+#market_block {
+    margin-top: 40;
+    margin-left: 38;
+    padding: 30 40;
+    white-space: nowrap;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 2px;
+}
+
+.market_item {
+    /* float: left; */
+    display: inline-block;
+    margin-right: 70;
+}
+
+#market_block .last {
+    margin-right: 0;
+}
+
+.market_title {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18;
+}
+
+.market_count {
+    margin-top: 4;
+    color: white;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+    font-size: 22;
+    font-weight: bold;
+}
+
+.section_title {
+    font-size: 20;
+    color: white;
+    font-weight: bold;
+}
+
+#account_title {
+    margin-top: 40;
+    margin-left: 38;
+}
+
+#account_echarts {
+    width: 589;
+    height: 220;
+    margin-top: 24;
+    margin-left: 38;
+}
+
+#contract_title {
+    margin-top: 40;
+    margin-left: 38;
+}
+
+#contract_echarts {
+    width: 589;
+    height: 220;
+    margin-top: 24;
+    margin-left: 38;
+}
+
+.echarts_value {
+    float: left;
+    margin-top: -230;
+    margin-left: 58;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 18;
+}
+
+.echarts_value div {
+    margin-top: 4;
+    color: #F1C717;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+    font-size: 22;
+    font-weight: bold;
+}
+
+#earth_map {
+    position: absolute;
+    top: 314;
+    left: 664;
+    width: 747;
+    height: 538;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#earth_map_title {
+    margin-top: 24;
+    margin-left: 20;
+}
+
+#earth_map_img {
+    width: 684;
+    height: 394;
+    margin-top: 48;
+    margin-left: 34;
+    background-image: url(images/earth@2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@keyframes map_pin_outer_animation {
+    0% {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2, 2);
+    }
+}
+
+@keyframes map_pin_inner_animation {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2, 2);
+    }
+}
+
+#earth_map_img .pin {
+    position: absolute;
+    width: 16;
+    height: 16;
+    /* background-color: #F4CB15; */
+}
+
+#earth_map_img .outer_border {
+    position: absolute;
+    width: 16;
+    height: 16;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: #F4CB15;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 8px;
+    animation-name: map_pin_outer_animation;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+#earth_map_img .inner_border {
+    position: absolute;
+    width: 6;
+    height: 6;
+    top: 5;
+    left: 5;
+    opacity: 0;
+    background-color: #F4CB15;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 3px;
+    animation-name: map_pin_inner_animation;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+#realtime_statistics_block {
+    position: absolute;
+    top: 880;
+    left: 664;
+    width: 747;
+}
+
+.realtime_item {
+    display: inline-block;
+    margin-right: 40;
+}
+
+.realtime_title {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 18;
+}
+
+.realtime_count {
+    margin-top: 4;
+    color: #F1C717;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+    font-size: 22;
+    font-weight: bold;
+}
+
+#realtime_blocks {
+    position: absolute;
+    top: 965;
+    left: 664;
+    width: 744;
+    height: 92;
+    overflow-y: hidden;
+    /* background-color: rgba(255, 255, 255, 0.05); */
+}
+
+#realtime_blocks div {
+    display: inline-block;
+    width: 6;
+    margin-right: 6;
+    background-color: #F1C717;
+    border-style: solid;
+    border-radius: 1px;
+    border-width: 0;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#left_column {
+    position: absolute;
+    top: 0;
+    left: 1446;
+    width: 431;
+    height: 1080;
+}
+
+#time_logo {
+    position: absolute;
+    top: 22;
+    left: 0;
+    height: 39;
+    width: 500;
+}
+
+#logo {
+    display: inline-block;
+    margin-left: 15;
+    vertical-align: middle;
+}
+
+#time {
+    display: inline-block;
+    color: white;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+    font-size: 14;
+    font-weight: bold;
+}
+
+#nas_price_block {
+    position: absolute;
+    top: 74;
+    left: 0;
+    height: 113;
+    width: 431;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#nas_price_block .section_title {
+    position: relative;
+    top: 23;
+    left: 21;
+}
+
+#price_echarts {
+    position: absolute;
+    top: 44;
+    left: 44;
+    width: 341;
+    height: 71;
+    /* background-color: rgba(255, 255, 255, 0.05); */
+}
+
+#price_diff {
+    position: relative;
+    white-space: nowrap;
+    display: inline-block;
+    top: 13;
+    left: 30%;
+    color: white;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+    font-weight: bold;
+}
+
+#price_diff div {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#dollar {
+    font-size: 10pt;
+}
+
+#realtime_price {
+    font-size: 20pt;
+}
+
+#diff {
+    font-size: 12pt;
+    color: #43D23F;
+}
+
+#nas_user_block {
+    position: absolute;
+    top: 207;
+    left: 0;
+    height: 348;
+    width: 431;
+    background-color: rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+}
+
+#nas_user_block .section_title {
+    position: relative;
+    top: 24;
+    left: 19;
+}
+
+#user_block {
+    position: absolute;
+    top: 64;
+    left: 22;
+}
+
+.user_item {
+    display: inline-block;
+    margin-right: 40;
+}
+
+.user_title {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18;
+}
+
+.user_count {
+    margin-top: 4;
+    color: white;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+    font-size: 22;
+    font-weight: bold;
+}
+
+.user_circle_line {
+    position: absolute;
+    border-style: solid;
+    border-width: 1;
+    border-radius: 50%;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+#user_circle_line_1 {
+    width: 400;
+    height: 400;
+    bottom: -200;
+    left: 15.5;
+}
+
+#user_circle_line_2 {
+    width: 330;
+    height: 330;
+    bottom: -165;
+    left: 50.5;
+}
+
+#user_circle_line_3 {
+    width: 260;
+    height: 260;
+    bottom: -130;
+    left: 85.5;
+}
+
+#old_user_pie {
+    position: absolute;
+    bottom: -90;
+    left: 125.5;
+    width: 180;
+    height: 180;
+    background-image: linear-gradient(to bottom, RGBA(241, 199, 23, 0.2) 50%, transparent 0);
+    border-style: solid;
+    border-width: 0;
+    border-radius: 50%;
+}
+
+#new_user_pie {
+    position: absolute;
+    bottom: -113;
+    left: 102.5;
+    width: 226;
+    height: 226;
+    background-image: linear-gradient(to bottom, transparent 50%, #F4CB15 0);
+    border-style: solid;
+    border-width: 0;
+    border-radius: 50%;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+#special_transaction_block {
+    position: absolute;
+    top: 575;
+    left: 0;
+    height: 462;
+    width: 431;
+    background-color: rgba(255, 255, 255, 0.05);
+    overflow: scroll;
+}
+
+#special_transaction_block .section_title {
+    /* position: relative; */
+    margin-top: 24;
+    margin-left: 19;
+    margin-bottom: 19;
+}
+
+.special_transaction {
+    width: 410;
+    height: 62;
+    padding-top: 17;
+    padding-left: 21;
+}
+
+.tx_item {
+    display: inline-block;
+    margin-right: 40;
+}
+
+.tx_title {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16;
+}
+
+.tx_count {
+    margin-top: 0;
+    color: white;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+    font-size: 18;
+    font-weight: bold;
+}
+
+.tx_hash {
+    width: 100;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.tx_value {
+    width: 200;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#special_transaction_block .special_transaction:nth-child(even) {
+    background-image: linear-gradient(90deg, RGBA(241, 199, 23, 0.2), transparent);
+}
+
+@keyframes tx_move_in {
+    0% {
+        margin-left: 431;
+    }
+    100% {
+        margin-left: 0;
+    }
+}

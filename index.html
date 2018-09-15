@@ -1,18 +1,141 @@
----
-layout: default
----
+<html>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">    
-      
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/echarts.js"></script>
+</head>
 
-      <div class="entry">
-        {{ post.content | truncatewords:40}}
-      </div>
-      
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+<body>
+    <div id='daily_transactions'>Daily transactions <img src="images/three_lines@2x.png"></div>
+    <div id="daily_transaction_block">
+        <div class="number number_1"></div>
+        <div class="number number_2"></div>
+        <div class="number number_c"></div>
+        <div class="number number_3"></div>
+        <div class="number number_4"></div>
+        <div class="number number_5"></div>
+        <div class="number number_c"></div>
+        <div class="number number_6"></div>
+        <div class="number number_7"></div>
+        <div class="number number_8"></div>
+        <div class="number number_p"></div>
+        <div class="number number_9"></div>
+        <div class="number number_0"></div>
+        <div class="clear"></div>
+    </div>
+
+    <div id="transactions_block">
+        <div class="period_item">
+            <div class="period_title">Daily</div>
+            <div class="period_count">125,267</div>
+        </div>
+        <div class="period_item">
+            <div class="period_title">Weekly</div>
+            <div class="period_count">24,217</div>
+        </div>
+        <div class="period_item">
+            <div class="period_title">The past 14 days</div>
+            <div class="period_count">542,261</div>
+        </div>
+    </div>
+
+    <div id="market_block">
+        <div class="market_item">
+            <div class="market_title">Market value</div>
+            <div class="market_count">220,357,264</div>
+        </div>
+        <div class="market_item">
+            <div class="market_title">Token value</div>
+            <div class="market_count">45,000,000</div>
+        </div>
+        <div class="market_item last">
+            <div class="market_title">Dapps</div>
+            <div class="market_count">6,871</div>
+        </div>
+    </div>
+
+    <div id="account_title" class="section_title">Number of main network accounts</div>
+    <div id="account_echarts"></div>
+    <div id="account_max" class="echarts_value">Max
+        <div>847,409</div>
+    </div>
+
+    <div id="contract_title" class="section_title">Number of smart contracts accounts</div>
+    <div id="contract_echarts"></div>
+    <div id="contract_max" class="echarts_value">Max
+        <div>26,431</div>
+    </div>
+
+    <div id="earth_map">
+        <div id="earth_map_title" class="section_title">Nas nano Users distribution</div>
+        <div id="earth_map_img"></div>
+    </div>
+
+    <div id="realtime_statistics_block">
+        <div class="realtime_item">
+            <div class="realtime_title">Block Height</div>
+            <div class="realtime_count">125,265,243</div>
+        </div>
+        <div class="realtime_item">
+            <div class="realtime_title">Total Transactions</div>
+            <div class="realtime_count">1,844,523</div>
+        </div>
+        <div class="realtime_item">
+            <div class="realtime_title">Consensus node</div>
+            <div class="realtime_count">234</div>
+        </div>
+        <div class="realtime_item">
+            <div class="realtime_title">Total address</div>
+            <div class="realtime_count">113,834</div>
+        </div>
+    </div>
+
+    <div id="realtime_blocks"></div>
+
+    <div id="left_column">
+        <div id="time_logo">
+            <div id="time">JUN 18.2018 14:23:32 GMT+8</div>
+            <img id="logo" src="images/nebulas_logo@2x.png">
+        </div>
+
+        <div id="nas_price_block">
+            <div class="section_title">Price</div>
+            <div id="price_echarts"></div>
+            <div id="price_diff">
+                <div id="dollar">$</div>
+                <div id="realtime_price">9.99</div>
+                <div id="diff">+10.0%</div>
+            </div>
+        </div>
+
+        <div id="nas_user_block">
+            <div class="section_title">Comparison of new and old users</div>
+            <div id="user_block">
+                <div class="user_item">
+                    <div class="user_title">New Users</div>
+                    <div class="user_count">125,374</div>
+                </div>
+                <div class="user_item">
+                    <div class="user_title">Old Users</div>
+                    <div class="user_count">4,125,267</div>
+                </div>
+            </div>
+            <div id="user_circle_line_1" class="user_circle_line"></div>
+            <div id="user_circle_line_2" class="user_circle_line"></div>
+            <div id="user_circle_line_3" class="user_circle_line"></div>
+            <div id="old_user_pie"></div>
+            <div id="new_user_pie"></div>
+        </div>
+
+        <div id="special_transaction_block">
+            <div class="section_title">Special transaction detection</div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
