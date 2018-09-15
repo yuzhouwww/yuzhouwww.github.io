@@ -1,9 +1,9 @@
-var app = new Vue({
-    el: '#daily_transactions',
-    data: {
-        message: 'Hello Vue!'
-    }
-});
+// var app = new Vue({
+//     el: '#daily_transactions',
+//     data: {
+//         message: 'Hello Vue!'
+//     }
+// });
 
 $(document).ready(function () {
     // 实时交易量
