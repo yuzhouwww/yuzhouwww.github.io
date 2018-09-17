@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
@@ -11,20 +12,6 @@
 <body>
     <div id='daily_transactions'>Daily transactions <img src="images/three_lines@2x.png"></div>
     <div id="daily_transaction_block">
-        <div class="number number_1"></div>
-        <div class="number number_2"></div>
-        <div class="number number_c"></div>
-        <div class="number number_3"></div>
-        <div class="number number_4"></div>
-        <div class="number number_5"></div>
-        <div class="number number_c"></div>
-        <div class="number number_6"></div>
-        <div class="number number_7"></div>
-        <div class="number number_8"></div>
-        <div class="number number_p"></div>
-        <div class="number number_9"></div>
-        <div class="number number_0"></div>
-        <div class="clear"></div>
     </div>
 
     <div id="transactions_block">
@@ -69,36 +56,10 @@
         <div>26,431</div>
     </div>
 
-    <div id="earth_map">
-        <div id="earth_map_title" class="section_title">Nas nano Users distribution</div>
-        <div id="earth_map_img"></div>
-    </div>
-
-    <div id="realtime_statistics_block">
-        <div class="realtime_item">
-            <div class="realtime_title">Block Height</div>
-            <div class="realtime_count">125,265,243</div>
-        </div>
-        <div class="realtime_item">
-            <div class="realtime_title">Total Transactions</div>
-            <div class="realtime_count">1,844,523</div>
-        </div>
-        <div class="realtime_item">
-            <div class="realtime_title">Consensus node</div>
-            <div class="realtime_count">234</div>
-        </div>
-        <div class="realtime_item">
-            <div class="realtime_title">Total address</div>
-            <div class="realtime_count">113,834</div>
-        </div>
-    </div>
-
-    <div id="realtime_blocks"></div>
-
-    <div id="left_column">
+    <div id="middle_column">
         <div id="time_logo">
-            <div id="time">JUN 18.2018 14:23:32 GMT+8</div>
             <img id="logo" src="images/nebulas_logo@2x.png">
+            <div id="time">JUN 18.2018 14:23:32 GMT+8</div>
         </div>
 
         <div id="nas_price_block">
@@ -110,6 +71,36 @@
                 <div id="diff">+10.0%</div>
             </div>
         </div>
+
+        <div id="earth_map">
+            <div id="earth_map_title" class="section_title">Nas nano Users distribution</div>
+            <div id="earth_map_img"></div>
+        </div>
+
+        <div id="realtime_statistics_block">
+            <div class="realtime_item">
+                <div class="realtime_title">Block Height</div>
+                <div class="realtime_count">125,265,243</div>
+            </div>
+            <div class="realtime_item">
+                <div class="realtime_title">Total Transactions</div>
+                <div class="realtime_count">1,844,523</div>
+            </div>
+            <div class="realtime_item">
+                <div class="realtime_title">Consensus node</div>
+                <div class="realtime_count">234</div>
+            </div>
+            <div class="realtime_item">
+                <div class="realtime_title">Total address</div>
+                <div class="realtime_count">113,834</div>
+            </div>
+        </div>
+
+        <div id="realtime_blocks"></div>
+    </div>
+
+    <div id="left_column">
+
 
         <div id="nas_user_block">
             <div class="section_title">Comparison of new and old users</div>

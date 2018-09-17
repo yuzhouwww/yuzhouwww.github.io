@@ -133,10 +133,89 @@ body {
     font-weight: bold;
 }
 
-#earth_map {
+#middle_column {
     position: absolute;
-    top: 314;
+    top: 0;
     left: 664;
+    width: 747;
+    height: 1080;
+}
+
+#time_logo {
+    float: right;
+    margin-top: 64;
+    height: 39;
+    width: auto;
+}
+
+#logo {
+    display: inline-block;
+    margin-right: 15;
+    vertical-align: middle;
+}
+
+#time {
+    display: inline-block;
+    color: white;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+    font-size: 14;
+    font-weight: bold;
+}
+
+#nas_price_block {
+    float: right;
+    margin-top: 54;
+    height: 113;
+    width: 431;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#nas_price_block .section_title {
+    margin-top: 23;
+    margin-left: 21;
+}
+
+#price_echarts {
+    float: right;
+    margin-top: -8;
+    margin-left: 90;
+    width: 341;
+    height: 71;
+}
+
+#price_diff {
+    position: relative;
+    white-space: nowrap;
+    display: inline-block;
+    top: -80;
+    left: 40%;
+    color: white;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+    font-weight: bold;
+}
+
+#price_diff div {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#dollar {
+    font-size: 10pt;
+}
+
+#realtime_price {
+    font-size: 20pt;
+}
+
+#diff {
+    font-size: 12pt;
+    color: #43D23F;
+}
+
+#earth_map {
+    float: left;
+    margin-top: 44;
     width: 747;
     height: 538;
     background-color: rgba(255, 255, 255, 0.05);
@@ -226,9 +305,8 @@ body {
 }
 
 #realtime_statistics_block {
-    position: absolute;
-    top: 880;
-    left: 664;
+    float: left;
+    margin-top: 30;
     width: 747;
 }
 
@@ -251,11 +329,10 @@ body {
 }
 
 #realtime_blocks {
-    position: absolute;
-    top: 965;
-    left: 664;
+    float: left;
+    margin-top: 30;
     width: 744;
-    height: 92;
+    height: 82;
     overflow-y: hidden;
     /* background-color: rgba(255, 255, 255, 0.05); */
 }
@@ -281,85 +358,9 @@ body {
     height: 1080;
 }
 
-#time_logo {
-    position: absolute;
-    top: 22;
-    left: 0;
-    height: 39;
-    width: 500;
-}
-
-#logo {
-    display: inline-block;
-    margin-left: 15;
-    vertical-align: middle;
-}
-
-#time {
-    display: inline-block;
-    color: white;
-    font-family: "Microsoft YaHei", "Hiragino Sans GB";
-    font-size: 14;
-    font-weight: bold;
-}
-
-#nas_price_block {
-    position: absolute;
-    top: 74;
-    left: 0;
-    height: 113;
-    width: 431;
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-#nas_price_block .section_title {
-    position: relative;
-    top: 23;
-    left: 21;
-}
-
-#price_echarts {
-    position: absolute;
-    top: 44;
-    left: 44;
-    width: 341;
-    height: 71;
-    /* background-color: rgba(255, 255, 255, 0.05); */
-}
-
-#price_diff {
-    position: relative;
-    white-space: nowrap;
-    display: inline-block;
-    top: 13;
-    left: 30%;
-    color: white;
-    font-family: "Microsoft YaHei", "Hiragino Sans GB";
-    font-weight: bold;
-}
-
-#price_diff div {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-#dollar {
-    font-size: 10pt;
-}
-
-#realtime_price {
-    font-size: 20pt;
-}
-
-#diff {
-    font-size: 12pt;
-    color: #43D23F;
-}
-
 #nas_user_block {
     position: absolute;
-    top: 207;
+    top: 49;
     left: 0;
     height: 348;
     width: 431;
@@ -455,9 +456,9 @@ body {
 
 #special_transaction_block {
     position: absolute;
-    top: 575;
+    top: 428;
     left: 0;
-    height: 462;
+    height: 627;
     width: 431;
     background-color: rgba(255, 255, 255, 0.05);
     overflow: scroll;
@@ -467,7 +468,7 @@ body {
     /* position: relative; */
     margin-top: 24;
     margin-left: 19;
-    margin-bottom: 19;
+    margin-bottom: 24;
 }
 
 .special_transaction {

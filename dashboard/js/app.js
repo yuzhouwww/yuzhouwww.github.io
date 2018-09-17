@@ -126,8 +126,8 @@ $(document).ready(function () {
     window.setInterval(function () {
         let pin = $("<div class='pin'></div>");
         pin.css({
-            "top": Math.random() * 438 + 50,
-            "left": Math.random() * 647 + 50
+            "top": Math.random() * 294 + 50 + 403,
+            "left": Math.random() * 484 + 50 + 34
         });
         pin.append($("<div class='outer_border'></div><div class='inner_border'></div>"));
         $("#earth_map_img").append(pin);
@@ -137,21 +137,22 @@ $(document).ready(function () {
     }, 600);
 
     // 初始区块动画
+    let totalHeight = 82;
     window.setTimeout(function () {
         // var blocks = new Array();
         for (let index = 0; index < 62; index++) {
             var txBlock = $("<div></div>");
             txBlock.css({
-                "margin-top": 92,
-                "height": 92
+                "margin-top": totalHeight,
+                "height": totalHeight
             });
             $("#realtime_blocks").append(txBlock);
             var percent = Math.random() * 0.30 + 0.70;
             txBlock.css({
                 // "margin-top": (1 - percent) * 92,
-                "height": 92,
-                "-webkit-transform": "translate(0, -" + percent * 92 + "px)",
-                "transform": "translate(0, -" + percent * 92 + "px)"
+                "height": totalHeight,
+                "-webkit-transform": "translate(0, -" + percent * totalHeight + "px)",
+                "transform": "translate(0, -" + percent * totalHeight + "px)"
             });
         }
     }, 100);
@@ -164,15 +165,15 @@ $(document).ready(function () {
             $(this).remove();
             var txBlock = $("<div></div>");
             txBlock.css({
-                "margin-top": 92,
-                "height": 92
+                "margin-top": totalHeight,
+                "height": totalHeight
             });
             $("#realtime_blocks").append(txBlock);
             var percent = Math.random() * 0.30 + 0.70;
             txBlock.css({
-                "height": 92,
-                "-webkit-transform": "translate(0, -" + percent * 92 + "px)",
-                "transform": "translate(0, -" + percent * 92 + "px)"
+                "height": totalHeight,
+                "-webkit-transform": "translate(0, -" + percent * totalHeight + "px)",
+                "transform": "translate(0, -" + percent * totalHeight + "px)"
             });
         });
     }, 15000);
@@ -247,7 +248,7 @@ $(document).ready(function () {
     });
 
     // special transaction
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 20; i++) {
         var tx = $("<div class=\"special_transaction\">\
                         <div class=\"tx_item\">\
                             <div class=\"tx_title\">Txhash</div>\
@@ -258,7 +259,7 @@ $(document).ready(function () {
                             <div class=\"tx_count tx_value\">7,816,560.85</div>\
                         </div>\
                     </div>");
-        if (i < 5) {
+        if (i < 7) {
             tx.css({
                 "margin-left": "431",
                 "animation": "tx_move_in 1s ease " + i * 0.1 + "s 1 normal forwards running" 
