@@ -126,8 +126,8 @@ $(document).ready(function () {
     window.setInterval(function () {
         let pin = $("<div class='pin'></div>");
         pin.css({
-            "top": Math.random() * 294 + 50 + 403,
-            "left": Math.random() * 484 + 50 + 34
+            "top": Math.random() * 294 + 50 + 403 + "px",
+            "left": Math.random() * 484 + 50 + 34 + "px"
         });
         pin.append($("<div class='outer_border'></div><div class='inner_border'></div>"));
         $("#earth_map_img").append(pin);
@@ -143,14 +143,14 @@ $(document).ready(function () {
         for (let index = 0; index < 62; index++) {
             var txBlock = $("<div></div>");
             txBlock.css({
-                "margin-top": totalHeight,
-                "height": totalHeight
+                "margin-top": totalHeight + "px",
+                "height": totalHeight + "px"
             });
             $("#realtime_blocks").append(txBlock);
             var percent = Math.random() * 0.30 + 0.70;
             txBlock.css({
                 // "margin-top": (1 - percent) * 92,
-                "height": totalHeight,
+                "height": totalHeight + "px",
                 "-webkit-transform": "translate(0, -" + percent * totalHeight + "px)",
                 "transform": "translate(0, -" + percent * totalHeight + "px)"
             });
@@ -165,13 +165,13 @@ $(document).ready(function () {
             $(this).remove();
             var txBlock = $("<div></div>");
             txBlock.css({
-                "margin-top": totalHeight,
-                "height": totalHeight
+                "margin-top": totalHeight + "px",
+                "height": totalHeight + "px"
             });
             $("#realtime_blocks").append(txBlock);
             var percent = Math.random() * 0.30 + 0.70;
             txBlock.css({
-                "height": totalHeight,
+                "height": totalHeight + "px",
                 "-webkit-transform": "translate(0, -" + percent * totalHeight + "px)",
                 "transform": "translate(0, -" + percent * totalHeight + "px)"
             });
@@ -261,7 +261,7 @@ $(document).ready(function () {
                     </div>");
         if (i < 7) {
             tx.css({
-                "margin-left": "431",
+                "margin-left": "431px",
                 "animation": "tx_move_in 1s ease " + i * 0.1 + "s 1 normal forwards running" 
             });
         }

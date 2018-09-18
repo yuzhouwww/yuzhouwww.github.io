@@ -2,8 +2,8 @@ body {
     background-color: black;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, arial, sans-serif;
     font-weight: normal;
-    width: 1920;
-    height: 1080;
+    width: 1920px;
+    height: 1080px;
 }
 
 @font-face {
@@ -17,47 +17,47 @@ body {
 
 #daily_transactions {
     color: #FFDD0D;
-    font-size: 24;
+    font-size: 24px;
     font-weight: bold;
-    margin: 40 0 0 30;
+    margin: 40px 0px 0px 30px;
 }
 
 #daily_transaction_block {
-    margin-top: -20;
-    margin-left: 30;
+    margin-top: -20px;
+    margin-left: 30px;
     color: #FFDD0D;
     font-family: Prism, Helvetica;
-    font-size: 100pt;
+    font-size: 122px;
     letter-spacing: 3pt;
 }
 
 #transactions_block {
-    margin-top: 10;
-    margin-left: 30;
+    margin-top: 10px;
+    margin-left: 30px;
 }
 
 .period_item {
     display: inline-block;
-    margin-right: 70;
+    margin-right: 70px;
 }
 
 .period_title {
     color: rgba(255, 255, 255, 0.6);
-    font-size: 18;
+    font-size: 18px;
 }
 
 .period_count {
-    margin-top: 4;
+    margin-top: 4px;
     color: white;
     font-family: "Microsoft YaHei", "Hiragino Sans GB";
-    font-size: 22;
+    font-size: 22px;
     font-weight: bold;
 }
 
 #market_block {
-    margin-top: 40;
-    margin-left: 38;
-    padding: 30 40;
+    margin-top: 40px;
+    margin-left: 38px;
+    padding: 30px 40px;
     white-space: nowrap;
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.05);
@@ -67,90 +67,90 @@ body {
 .market_item {
     /* float: left; */
     display: inline-block;
-    margin-right: 70;
+    margin-right: 70px;
 }
 
 #market_block .last {
-    margin-right: 0;
+    margin-right: 0px;
 }
 
 .market_title {
     color: rgba(255, 255, 255, 0.6);
-    font-size: 18;
+    font-size: 18px;
 }
 
 .market_count {
-    margin-top: 4;
+    margin-top: 4px;
     color: white;
     font-family: "Microsoft YaHei", "Hiragino Sans GB";
-    font-size: 22;
+    font-size: 22px;
     font-weight: bold;
 }
 
 .section_title {
-    font-size: 20;
+    font-size: 20px;
     color: white;
     font-weight: bold;
 }
 
 #account_title {
-    margin-top: 40;
-    margin-left: 38;
+    margin-top: 40px;
+    margin-left: 38px;
 }
 
 #account_echarts {
-    width: 589;
-    height: 220;
-    margin-top: 24;
-    margin-left: 38;
+    width: 589px;
+    height: 220px;
+    margin-top: 24px;
+    margin-left: 38px;
 }
 
 #contract_title {
-    margin-top: 40;
-    margin-left: 38;
+    margin-top: 40px;
+    margin-left: 38px;
 }
 
 #contract_echarts {
-    width: 589;
-    height: 220;
-    margin-top: 24;
-    margin-left: 38;
+    width: 589px;
+    height: 220px;
+    margin-top: 24px;
+    margin-left: 38px;
 }
 
 .echarts_value {
     float: left;
-    margin-top: -230;
-    margin-left: 58;
+    margin-top: -230px;
+    margin-left: 58px;
     color: rgba(255, 255, 255, 0.4);
-    font-size: 18;
+    font-size: 18px;
 }
 
 .echarts_value div {
-    margin-top: 4;
+    margin-top: 4px;
     color: #F1C717;
     font-family: "Microsoft YaHei", "Hiragino Sans GB";
-    font-size: 22;
+    font-size: 22px;
     font-weight: bold;
 }
 
 #middle_column {
     position: absolute;
-    top: 0;
-    left: 664;
-    width: 747;
-    height: 1080;
+    top: 0px;
+    left: 664px;
+    width: 747px;
+    height: 1080px;
 }
 
 #time_logo {
     float: right;
-    margin-top: 64;
-    height: 39;
+    margin-top: 64px;
+    height: 39px;
     width: auto;
 }
 
 #logo {
     display: inline-block;
-    margin-right: 15;
+    margin-right: 15px;
     vertical-align: middle;
 }
 
@@ -158,36 +158,36 @@ body {
     display: inline-block;
     color: white;
     font-family: "Microsoft YaHei", "Hiragino Sans GB";
-    font-size: 14;
+    font-size: 14px;
     font-weight: bold;
 }
 
 #nas_price_block {
     float: right;
-    margin-top: 54;
-    height: 113;
-    width: 431;
+    margin-top: 54px;
+    height: 113px;
+    width: 431px;
     background-color: rgba(255, 255, 255, 0.05);
 }
 
 #nas_price_block .section_title {
-    margin-top: 23;
-    margin-left: 21;
+    margin-top: 23px;
+    margin-left: 21px;
 }
 
 #price_echarts {
     float: right;
-    margin-top: -8;
-    margin-left: 90;
-    width: 341;
-    height: 71;
+    margin-top: -8px;
+    margin-left: 90px;
+    width: 341px;
+    height: 71px;
 }
 
 #price_diff {
     position: relative;
     white-space: nowrap;
     display: inline-block;
-    top: -80;
+    top: -80px;
     left: 40%;
     color: white;
     font-family: "Microsoft YaHei", "Hiragino Sans GB";
@@ -201,36 +201,36 @@ body {
 }
 
 #dollar {
-    font-size: 10pt;
+    font-size: 14px;
 }
 
 #realtime_price {
-    font-size: 20pt;
+    font-size: 22px;
 }
 
 #diff {
-    font-size: 12pt;
+    font-size: 14px;
     color: #43D23F;
 }
 
 #earth_map {
     float: left;
-    margin-top: 44;
-    width: 747;
-    height: 538;
+    margin-top: 44px;
+    width: 747px;
+    height: 538px;
     background-color: rgba(255, 255, 255, 0.05);
 }
 
 #earth_map_title {
-    margin-top: 24;
-    margin-left: 20;
+    margin-top: 24px;
+    margin-left: 20px;
 }
 
 #earth_map_img {
-    width: 684;
-    height: 394;
-    margin-top: 48;
-    margin-left: 34;
+    width: 684px;
+    height: 394px;
+    margin-top: 48px;
+    margin-left: 34px;
     background-image: url(images/earth@2x.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -267,21 +267,21 @@ body {
 
 #earth_map_img .pin {
     position: absolute;
-    width: 16;
-    height: 16;
+    width: 16px;
+    height: 16px;
     /* background-color: #F4CB15; */
 }
 
 #earth_map_img .outer_border {
     position: absolute;
-    width: 16;
-    height: 16;
-    top: 0;
-    left: 0;
+    width: 16px;
+    height: 16px;
+    top: 0px;
+    left: 0px;
     opacity: 0;
     background-color: #F4CB15;
     border-style: solid;
-    border-width: 0;
+    border-width: 0px;
     border-radius: 8px;
     animation-name: map_pin_outer_animation;
     animation-duration: 1s;
@@ -290,14 +290,14 @@ body {
 
 #earth_map_img .inner_border {
     position: absolute;
-    width: 6;
-    height: 6;
-    top: 5;
-    left: 5;
+    width: 6px;
+    height: 6px;
+    top: 5px;
+    left: 5px;
     opacity: 0;
     background-color: #F4CB15;
     border-style: solid;
-    border-width: 0;
+    border-width: 0px;
     border-radius: 3px;
     animation-name: map_pin_inner_animation;
     animation-duration: 1s;
@@ -306,45 +306,44 @@ body {
 
 #realtime_statistics_block {
     float: left;
-    margin-top: 30;
-    width: 747;
+    margin-top: 30px;
+    width: 747px;
 }
 
 .realtime_item {
     display: inline-block;
-    margin-right: 40;
+    margin-right: 40px;
 }
 
 .realtime_title {
     color: rgba(255, 255, 255, 0.4);
-    font-size: 18;
+    font-size: 18px;
 }
 
 .realtime_count {
-    margin-top: 4;
+    margin-top: 4px;
     color: #F1C717;
     font-family: "Microsoft YaHei", "Hiragino Sans GB";
-    font-size: 22;
+    font-size: 22px;
     font-weight: bold;
 }
 
 #realtime_blocks {
     float: left;
-    margin-top: 30;
-    width: 744;
-    height: 82;
+    margin-top: 30px;
+    width: 744px;
+    height: 82px;
     overflow-y: hidden;
-    /* background-color: rgba(255, 255, 255, 0.05); */
 }
 
 #realtime_blocks div {
     display: inline-block;
-    width: 6;
-    margin-right: 6;
+    width: 6px;
+    margin-right: 6px;
     background-color: #F1C717;
     border-style: solid;
     border-radius: 1px;
-    border-width: 0;
+    border-width: 0px;
     transition-property: transform;
     transition-duration: 1s;
     transition-timing-function: ease;
@@ -352,87 +351,87 @@ body {
 
 #left_column {
     position: absolute;
-    top: 0;
-    left: 1446;
-    width: 431;
-    height: 1080;
+    top: 0px;
+    left: 1446px;
+    width: 431px;
+    height: 1080px;
 }
 
 #nas_user_block {
     position: absolute;
-    top: 49;
-    left: 0;
-    height: 348;
-    width: 431;
+    top: 49px;
+    left: 0px;
+    height: 348px;
+    width: 431px;
     background-color: rgba(255, 255, 255, 0.05);
     overflow: hidden;
 }
 
 #nas_user_block .section_title {
     position: relative;
-    top: 24;
-    left: 19;
+    top: 24px;
+    left: 19px;
 }
 
 #user_block {
     position: absolute;
-    top: 64;
-    left: 22;
+    top: 64px;
+    left: 22px;
 }
 
 .user_item {
     display: inline-block;
-    margin-right: 40;
+    margin-right: 40px;
 }
 
 .user_title {
     color: rgba(255, 255, 255, 0.6);
-    font-size: 18;
+    font-size: 18px;
 }
 
 .user_count {
-    margin-top: 4;
+    margin-top: 4px;
     color: white;
     font-family: "Microsoft YaHei", "Hiragino Sans GB";
-    font-size: 22;
+    font-size: 22px;
     font-weight: bold;
 }
 
 .user_circle_line {
     position: absolute;
     border-style: solid;
-    border-width: 1;
+    border-width: 1px;
     border-radius: 50%;
     border-color: rgba(255, 255, 255, 0.1);
 }
 
 #user_circle_line_1 {
-    width: 400;
-    height: 400;
-    bottom: -200;
-    left: 15.5;
+    width: 400px;
+    height: 400px;
+    bottom: -200px;
+    left: 15.5px;
 }
 
 #user_circle_line_2 {
-    width: 330;
-    height: 330;
-    bottom: -165;
-    left: 50.5;
+    width: 330px;
+    height: 330px;
+    bottom: -165px;
+    left: 50.5px;
 }
 
 #user_circle_line_3 {
-    width: 260;
-    height: 260;
-    bottom: -130;
-    left: 85.5;
+    width: 260px;
+    height: 260px;
+    bottom: -130px;
+    left: 85.5px;
 }
 
 #old_user_pie {
     position: absolute;
-    bottom: -90;
-    left: 125.5;
-    width: 180;
-    height: 180;
+    bottom: -90px;
+    left: 125.5px;
+    width: 180px;
+    height: 180px;
     background-image: linear-gradient(to bottom, RGBA(241, 199, 23, 0.2) 50%, transparent 0);
     border-style: solid;
     border-width: 0;
@@ -441,13 +440,13 @@ body {
 
 #new_user_pie {
     position: absolute;
-    bottom: -113;
-    left: 102.5;
-    width: 226;
-    height: 226;
+    bottom: -113px;
+    left: 102.5px;
+    width: 226px;
+    height: 226px;
     background-image: linear-gradient(to bottom, transparent 50%, #F4CB15 0);
     border-style: solid;
-    border-width: 0;
+    border-width: 0px;
     border-radius: 50%;
     transition-property: transform;
     transition-duration: 2s;
@@ -456,54 +455,54 @@ body {
 
 #special_transaction_block {
     position: absolute;
-    top: 428;
-    left: 0;
-    height: 627;
-    width: 431;
+    top: 428px;
+    left: 0px;
+    height: 627px;
+    width: 431px;
     background-color: rgba(255, 255, 255, 0.05);
     overflow: scroll;
 }
 
 #special_transaction_block .section_title {
     /* position: relative; */
-    margin-top: 24;
-    margin-left: 19;
-    margin-bottom: 24;
+    margin-top: 24px;
+    margin-left: 19px;
+    margin-bottom: 24px;
 }
 
 .special_transaction {
-    width: 410;
-    height: 62;
-    padding-top: 17;
-    padding-left: 21;
+    width: 410px;
+    height: 62px;
+    padding-top: 17px;
+    padding-left: 21px;
 }
 
 .tx_item {
     display: inline-block;
-    margin-right: 40;
+    margin-right: 40px;
 }
 
 .tx_title {
     color: rgba(255, 255, 255, 0.6);
-    font-size: 16;
+    font-size: 16px;
 }
 
 .tx_count {
-    margin-top: 0;
+    margin-top: 0px;
     color: white;
     font-family: "Microsoft YaHei", "Hiragino Sans GB";
-    font-size: 18;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .tx_hash {
-    width: 100;
+    width: 100px;
     text-overflow: ellipsis;
     overflow: hidden;
 }
 
 .tx_value {
-    width: 200;
+    width: 200px;
     text-overflow: ellipsis;
     overflow: hidden;
 }
@@ -514,9 +513,9 @@ body {
 
 @keyframes tx_move_in {
     0% {
-        margin-left: 431;
+        margin-left: 431px;
     }
     100% {
-        margin-left: 0;
+        margin-left: 0px;
     }
 }
