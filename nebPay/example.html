@@ -34,7 +34,8 @@
         function onNrc20PayClick() {
             var to = document.getElementById("nrc20to").value;
             var value = document.getElementById("nrc20value").value;
-            serialNumber = nebPay.nrc20pay("NRC", to, value, {
+            var currency = document.getElementById("currency").value;
+            serialNumber = nebPay.nrc20pay(currency, to, value, {
                 qrcode: {
                     showQRCode: true
                 },
