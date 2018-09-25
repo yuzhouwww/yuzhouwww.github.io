@@ -1,10 +1,12 @@
-.body{
+.body {
     margin: 0;
 }
-.container{
-        padding-right: 0px !important; 
-        padding-left: 0px !important;
+
+.container {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
 }
+
 .header {
     /* padding-top: 20px; */
     /* width: 80%; */
@@ -18,41 +20,56 @@
     height: 38px;
     display: inline-block;
 }
-#logo img{
-    widows: 100%;height: 100%;
+
+#logo img {
+    widows: 100%;
+    height: 100%;
 }
+
 .language {
     float: right;
     font-size: 16px;
     line-height: 50px;
 }
-.topImg{
-    width: 273px;
+
+.topImg {
+    width: 300px;
     height: 63px;
     margin: auto;
     margin-top: 60px;
 }
-.topImg img{
+
+.topImg img {
     width: 100%;
-   /* height: 100%;*/
+    /* height: 100%;*/
 }
-.topWords{
+
+.topWords {
     text-align: center;
     width: 300px;
-    height: 51px;
-    font-size: 12px;
+    /* height: 51px; */
+    font-size: 1.3rem;
     font-family: PingFangSC-Regular;
-    color: rgba(0,0,0,1);
-    line-height: 18px;
+    color: rgba(0, 0, 0, 1);
+    /* line-height: 18px; */
     margin: auto;
     margin-top: 18px;
-    
 }
-.download_btn{
+
+#nano_swap_tip {
+    margin: auto;
+    margin-top: 14px;
+    width: 300px;
+    /* text-align: center; */
+    font-size: 1rem;
+}
+
+.download_btn {
     text-align: center;
     margin-top: 28px;
 }
-#ios{
+
+#ios {
     display: inline-block;
     width: 140px;
     height: 42px;
@@ -63,9 +80,9 @@
     color: #fff;
     text-decoration: none;
     margin-right: 15px;
-    
 }
-#android{
+
+#android {
     display: inline-block;
     width: 140px;
     height: 42px;
@@ -74,216 +91,239 @@
     border-radius: 5px;
     border: 0.5px solid #038AFB;
     text-align: center;
-    color:#038AFB;
+    color: #038AFB;
     text-decoration: none;
-    
 }
-.phone{
+
+.phone {
     width: 100%;
     background: url(../images/H5_slices/组16@3x.png) no-repeat;
     padding-top: 108px;
     background-size: 1100px;
     background-position: 60px 30px;
 }
-.iphone{
+
+.iphone {
     width: 207px;
-    height: 361px;
+    /* height: 361px; */
     margin: auto;
 }
-.iphone img{
+
+.iphone img {
     width: 100%;
     height: 100%;
 }
 
-
-.gif1{
-    width:100%;
-    height:270px;
-    background:rgba(3,138,251,1);
+.gif1 {
+    width: 100%;
+    height: 270px;
+    background: rgba(3, 138, 251, 1);
 }
-.gif1 .gif{
+
+.gif1 .gif {
     width: 220px;
     height: 220px;
     margin: auto;
 }
-.gif1 .gif img{
+
+.gif1 .gif img {
     width: 100%;
     height: 100%;
 }
-.gif1 .word1{
+
+.gif1 .word1 {
     /* width:277px; */
-    height:29px;
-    font-size:18px;
-    font-family:SFProText-HeavyItalic;
-    color:rgba(255,255,255,1);
-    line-height:29px;
+    height: 29px;
+    font-size: 18px;
+    font-family: SFProText-HeavyItalic;
+    color: rgba(255, 255, 255, 1);
+    line-height: 29px;
     /* margin: auto; */
     text-align: center;
     font-weight: 500;
     margin-top: -34px;
     font-style: Italic;
 }
-.gif1 .word2{
-    height:23px;
-    font-size:12px;
-    font-family:PingFangSC-Thin;
-    color:rgba(255,255,255,1);
-    line-height:26px;
+
+.gif1 .word2 {
+    height: 23px;
+    font-size: 12px;
+    font-family: PingFangSC-Thin;
+    color: rgba(255, 255, 255, 1);
+    line-height: 26px;
     text-align: center;
 }
 
-
-
-.gif2{
-    width:100%;
-    height:270px;
-    background:#FF677C;
+.gif2 {
+    width: 100%;
+    height: 270px;
+    background: #FF677C;
 }
-.gif2 .gif{
+
+.gif2 .gif {
     width: 220px;
     height: 220px;
     margin: auto;
 }
-.gif2 .gif img{
+
+.gif2 .gif img {
     width: 100%;
     height: 100%;
 }
-.gif2 .word1{
+
+.gif2 .word1 {
     /* width:277px; */
-    height:29px;
-    font-size:18px;
-    font-family:SFProText-HeavyItalic;
-    color:rgba(255,255,255,1);
-    line-height:29px;
+    height: 29px;
+    font-size: 18px;
+    font-family: SFProText-HeavyItalic;
+    color: rgba(255, 255, 255, 1);
+    line-height: 29px;
     /* margin: auto; */
     text-align: center;
     font-weight: 500;
     margin-top: -34px;
     font-style: Italic;
 }
-.gif2 .word2{
-    height:23px;
-    font-size:12px;
-    font-family:PingFangSC-Thin;
-    color:rgba(255,255,255,1);
-    line-height:26px;
+
+.gif2 .word2 {
+    height: 23px;
+    font-size: 12px;
+    font-family: PingFangSC-Thin;
+    color: rgba(255, 255, 255, 1);
+    line-height: 26px;
     text-align: center;
 }
 
-
-.gif3{
-    width:100%;
-    height:270px;
-    background:#8651EB;
+.gif3 {
+    width: 100%;
+    height: 270px;
+    background: #8651EB;
 }
-.gif3 .gif{
+
+.gif3 .gif {
     width: 200px;
     height: 200px;
     margin: auto;
 }
-.gif3 .gif img{
+
+.gif3 .gif img {
     width: 100%;
     height: 100%;
 }
-.gif3 .word1{
+
+.gif3 .word1 {
     /* width:277px; */
-    height:29px;
-    font-size:18px;
-    font-family:SFProText-HeavyItalic;
-    color:rgba(255,255,255,1);
-    line-height:29px;
+    height: 29px;
+    font-size: 18px;
+    font-family: SFProText-HeavyItalic;
+    color: rgba(255, 255, 255, 1);
+    line-height: 29px;
     /* margin: auto; */
     text-align: center;
     font-weight: 500;
     margin-top: -14px;
     font-style: Italic;
 }
-.gif3 .word2{
-    height:23px;
-    font-size:12px;
-    font-family:PingFangSC-Thin;
-    color:rgba(255,255,255,1);
-    line-height:26px;
+
+.gif3 .word2 {
+    height: 23px;
+    font-size: 12px;
+    font-family: PingFangSC-Thin;
+    color: rgba(255, 255, 255, 1);
+    line-height: 26px;
     text-align: center;
 }
 
-
-.gif4{
-    width:100%;
-    height:270px;
-    background:#FF9C00;
+.gif4 {
+    width: 100%;
+    height: 380px;
+    background: #FF9C00;
 }
-.gif4 .gif{
+
+.gif4 .gif {
     width: 200px;
     height: 200px;
     margin: auto;
 }
-.gif4 .gif img{
+
+.gif4 .gif img {
     width: 100%;
     height: 100%;
 }
-.gif4 .word1{
+
+.gif4 .word1 {
     /* width:277px; */
-    height:29px;
-    font-size:18px;
-    font-family:SFProText-HeavyItalic;
-    color:rgba(255,255,255,1);
-    line-height:29px;
+    height: 29px;
+    font-size: 18px;
+    font-family: SFProText-HeavyItalic;
+    color: rgba(255, 255, 255, 1);
+    line-height: 29px;
     /* margin: auto; */
     text-align: center;
     font-weight: 500;
     margin-top: -14px;
     font-style: Italic;
 }
-.gif4 .word2{
-    height:23px;
-    font-size:12px;
-    font-family:PingFangSC-Thin;
-    color:rgba(255,255,255,1);
-    line-height:26px;
+
+.gif4 .word2 {
+    height: 23px;
+    font-size: 12px;
+    font-family: PingFangSC-Thin;
+    color: rgba(255, 255, 255, 1);
+    line-height: 26px;
     text-align: center;
 }
 
-.footer{
-    width:100%;
-    height:340px;
+#copyright {
+    margin-top: 80px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+.footer {
+    width: 100%;
+    height: 340px;
     position: relative;
     /* background:url(../images/H5_slices/组17@3x.png) center no-repeat; */
 }
-.footer img{
+
+.footer img {
     width: 100%;
     height: 100%;
 }
-#email{
-    width:70%;
-    height:40px;
-    background:rgba(255,255,255,1);
-    border-radius:4px;
+
+#email {
+    width: 70%;
+    height: 40px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 4px;
     border: none;
     margin-top: -278px;
     margin-left: 15%;
     position: absolute;
     padding-left: 12px;
-    font-size:14px;
-    font-family:PingFangSC-Light;
+    font-size: 14px;
+    font-family: PingFangSC-Light;
     /* color:rgba(102,102,102,1); */
-    line-height:40px;
+    line-height: 40px;
 }
 
-.button{
-    width:70%;
-    height:40px;
-    background:url(../images/H5_slices/search\ 拷贝@3x.png) center no-repeat;
-    border-radius:4px;
+.button {
+    width: 70%;
+    height: 40px;
+    background: url(../images/H5_slices/search\ 拷贝@3x.png) center no-repeat;
+    border-radius: 4px;
     border: none;
     margin-top: -218px;
     margin-left: 15%;
     position: absolute;
-
-    font-size:14px;
-    font-family:PingFangSC-Medium;
-    color:#fff;
-    line-height:40px;
+    font-size: 14px;
+    font-family: PingFangSC-Medium;
+    color: #fff;
+    line-height: 40px;
     text-align: center;
 }
 
@@ -293,21 +333,24 @@
     margin-top: -136px;
     /* text-align: center; */
 }
-.footer .icon ul>li{
+
+.footer .icon ul>li {
     /* float: left; */
     list-style: none;
-    margin:13px;
+    margin: 13px;
     width: 30px;
     height: 30px;
     display: inline-block;
 }
-.footer_words{
+
+.footer_words {
     /* margin-top: 10px; */
     text-align: center;
 }
-.footer_words a{
-    font-size:12px;
-    font-family:PingFangSC-Light;
-    color:rgba(255,255,255,.5);
-    line-height:28px;
+
+.footer_words a {
+    font-size: 12px;
+    font-family: PingFangSC-Light;
+    color: rgba(255, 255, 255, .5);
+    line-height: 28px;
 }
